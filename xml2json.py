@@ -234,7 +234,7 @@ def main():
     if options.strip_nl:
         input = input.replace('\n', '').replace('\n','')
     if (options.type == "xml2json"):
-        out = xml2json(input, options, strip_ns, strip)
+        out = xml2json(input, options, strip)
     else:
         out = json2xml(input)
 
